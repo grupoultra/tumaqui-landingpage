@@ -1,0 +1,184 @@
+$icon-font-path: '../fonts/'
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+// endbower
+
+@font-face
+  font-family: AmsiProBoldItalic
+  src: url("/fonts/AmsiPro-BoldItalic.otf") format("opentype")
+
+@font-face
+  font-family: AmsiProBlackItalic
+  src: url("/fonts/AmsiPro-BlackItalic.otf") format("opentype")
+
+$white: #FFFFFF
+$black: #000000
+$deeppink: #ff0082
+$pink1: #e55579
+$pink2: #fbe4e7
+$pink3: #d1006f
+
+body
+  font-size: 10pt
+#affiliate, #iwantit
+  margin: 20px
+  padding-bottom: 40px
+
+#affiliate
+  border-bottom: 4px dashed #EEE
+
+.pink-button
+  font-family: AmsiProBoldItalic
+  background-color: $deeppink
+  border-color: transparent
+  color: $white
+  border-radius: 0
+  &:hover
+    color: $white
+    border-color: transparent
+    background-color: $pink3
+  &:active, &:focus
+    color: $pink3
+    border-color: transparent
+    background-color: $white
+
+.black
+  color: $black
+.deeppink
+  color: $deeppink
+.head
+  font-family: AmsiProBoldItalic
+  color: $pink1
+  margin-bottom: 30px
+button.btn
+  text-transform: uppercase
+  font-size: 4em
+#top
+  margin-top: 30px
+
+#pickyourplan
+  margin-top: 40px
+  background: $white /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($white, $pink2) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($white, $pink2) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($white, $pink2) /* For Firefox 3.6 to 15 */
+  background: linear-gradient($white, $pink2) /* Standard syntax */
+  .head
+    font-size: 4em
+    text-transform: uppercase
+  .plan-item
+    margin-bottom: 50px
+    text-transform: uppercase
+    .header
+      font-family: AmsiProBoldItalic
+      display: inline-block
+      color: $white
+      font-size: 2em
+      padding: .2em .5em
+      background-color: $black
+      border-top-left-radius: 4px
+      border-top-right-radius: 4px
+    .body
+      background-color: $white
+      border-radius: 4px
+      font-family: AmsiProBoldItalic
+      .price-box
+        width: 70%
+        height: 90px
+        display: inline-block
+        position: relative
+        border: 2px dashed #666
+        border-radius: 1em
+        background: #EEE
+        margin-top: 65px
+        .price
+          line-height: 1
+          display: block
+          color: $black
+          font-size: 9em
+          margin-top: -60px
+        .spec
+          margin-top: -10px
+          font-size: 2em
+          line-height: 1
+          display: block
+      .paying
+        font-size: 3em
+        .bold-mix
+          margin-top: 30px
+          .black, .pink
+            line-height: 0.3
+        .small
+          font-size: .5em
+          margin-top: 27px
+        .regular
+          font-size: .8em
+          margin-bottom: 10px
+      .img-responsive
+        width: 100%
+      button
+        margin-top: 15px
+        margin-bottom: -30px
+
+#howitworks
+  margin-top: 30px
+#bestgift
+  margin-top: -50px
+#video
+  background: #fef7f8 /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#fef7f8, $pink2) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fef7f8, $pink2) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fef7f8, $pink2) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fef7f8, $pink2) /* Standard syntax */
+  .video-aside
+    padding-top: 35px
+    text-transform: uppercase
+    font-family: AmsiProBlackItalic
+    font-size: 160%
+  .video-button
+    border-top: 4px dashed #EEE
+    margin-top: 15px
+    padding-top: 15px
+    button
+      font-size: 2em
+#testimonies
+  padding: 40px 0
+  border-top: 4px dashed #EEE
+  border-bottom: 4px dashed #EEE
+  .testimonies-container
+    margin-bottom: 30px
+  .pink-button
+    font-size: 4em
+    line-height: .7
+#contact
+  padding: 30px
+  border-bottom: 4px dashed #EEE
+  .logo
+    margin-bottom: 20px
+  .social
+    img
+      margin: 0 10px
+#brand
+  background-color: $black
+  padding: 30px
+  border-bottom: 4px dashed #EEE
+  span
+    text-transform: uppercase
+    font-size: 4em
+    color: $white
+    font-family: AmsiProBoldItalic
+
+#footer
+  padding: 20px
+  background-color: $pink2
+  ul
+    li
+      list-style-type: none
+      display: inline
+      margin-right: 20px
+      a
+        font-family: AmsiProBoldItalic
+        color: $black
+        font-size: 1.5em
+        text-transform: uppercase
+        text-decoration: underline
