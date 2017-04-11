@@ -4,12 +4,24 @@ $icon-font-path: '../fonts/'
 // endbower
 
 @font-face
-  font-family: AmsiProBoldItalic
-  src: url("../fonts/AmsiPro/AmsiPro-BoldItalic.otf") format("opentype")
+  font-family: AmsiProBlack
+  src: url("../fonts/AmsiPro/AmsiPro-Black.otf") format("opentype")
 
 @font-face
   font-family: AmsiProBlackItalic
   src: url("../fonts/AmsiPro/AmsiPro-BlackItalic.otf") format("opentype")
+
+@font-face
+  font-family: AmsiProBoldItalic
+  src: url("../fonts/AmsiPro/AmsiPro-BoldItalic.otf") format("opentype")
+
+@font-face
+  font-family: AmsiProUltra
+  src: url("../fonts/AmsiPro/AmsiPro-Ultra.otf") format("opentype")
+
+@font-face
+  font-family: AmsiProUltraItalic
+  src: url("../fonts/AmsiPro/AmsiPro-UltraItalic.otf") format("opentype")
 
 $white: #FFFFFF
 $black: #000000
@@ -28,7 +40,7 @@ body
   border-bottom: 4px dashed #EEE
 
 .pink-button
-  font-family: AmsiProBoldItalic
+  font-family: AmsiProUltra
   background-color: $deeppink
   border-color: transparent
   color: $white
@@ -47,7 +59,7 @@ body
 .deeppink
   color: $deeppink
 .head
-  font-family: AmsiProBoldItalic
+  font-family: AmsiProUltraItalic
   color: $pink1
   margin-bottom: 30px
 button.btn
@@ -133,7 +145,7 @@ button.btn
   .video-aside
     padding-top: 35px
     text-transform: uppercase
-    font-family: AmsiProBlackItalic
+    font-family: AmsiProUltraItalic
     font-size: 160%
   .video-button
     border-top: 4px dashed #EEE
@@ -148,6 +160,7 @@ button.btn
   .testimonies-container
     margin-bottom: 30px
   .pink-button
+    font-family: AmsiProBoldItalic
     font-size: 4em
     line-height: .7
 #contact
