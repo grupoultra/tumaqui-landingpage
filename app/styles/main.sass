@@ -208,3 +208,52 @@ a.btn
         font-size: 1.5em
         text-transform: uppercase
         text-decoration: underline
+
+@mixin mailChimpForm()
+  text-align: center
+  #mc_embed_signup
+    form
+      padding: 0
+    button
+      border-radius: 0
+    label
+      font-family: AmsiProBoldItalic
+      font-size: 2em
+    input.email
+      border-radius: 0
+      display: block
+      width: 100%
+    input[name="subscribe"]
+      display: block
+      width: 100%
+      border-radius: 0
+      font-family: AmsiProBlack
+      background-color: $deeppink
+      font-size: 1.5em
+        
+#mailChimpModal
+  .modal-content
+    border-radius: 0
+  .modal-body
+    +mailChimpForm()
+  .modal-footer
+    button
+      color: $white
+      border-radius: 0
+      font-family: AmsiProBlack
+      background-color: #BBB
+
+#mailchimp-contact      
+  +mailChimpForm()
+  background-color: #f8dcdd
+  padding: 50px
+  background-image: url("../images/mailchimp-bg.jpg")
+  background-size: cover
+  #mc_embed_signup
+    form
+      text-align: center
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      padding: 30px
+    p
+      font-family: AmsiProBlackItalic
+      color: $pink1
